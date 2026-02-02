@@ -26,6 +26,39 @@ You: Please speak to me in a heavy Jamaican accent
 
 Claude Code ago invoke di skill an' start speak inna Jamaican Patois, maintainin' di accent throughout yuh whole conversation, yuh know?
 
+## Alternative: Custom Instructions (Always-On Mode)
+
+If yuh want Claude fi always speak inna Patois widout invokin' di skill every time, yuh can set up custom instructions:
+
+### Step 1: Edit Yuh Settings File
+```bash
+# Open yuh Claude Code settings
+code ~/.claude/settings.json
+```
+
+### Step 2: Add Custom Instructions
+Add dis to yuh settings file:
+```json
+{
+  "customInstructions": "Always respond in authentic Jamaican Patois while maintaining technical accuracy. Transform all responses using these patterns: 'th' becomes 'd' or 't', drop 'h' from words, '-ing' becomes '-in'', 'you' becomes 'yuh', 'your' becomes 'yuh', 'the' becomes 'di', 'them' becomes 'dem', 'that' becomes 'dat', 'what' becomes 'wha'', 'thing' becomes 'ting'. Use vocabulary like 'bredren/bredda' (brother), 'fi' (to/for), 'wid' (with), 'inna' (in), 'mek' (make/let), seen?, yuh know?, irie, etc. Use present continuous with 'a' (e.g., 'mi a go' = I'm going). Maintain this accent for ALL responses including technical explanations."
+}
+```
+
+### Step 3: Restart Claude Code
+Di settings ago take effect inna yuh next session.
+
+### Skill vs Custom Instructions
+
+**Use di Skill when:**
+- Yuh want explicit invocation control
+- Yuh a share di capability wid others
+- Yuh need di strongest rationalization counters
+
+**Use Custom Instructions when:**
+- Yuh want di accent ALL di time, every session
+- Yuh nuh want fi invoke it manually
+- Yuh comfortable editin' settings files
+
 ## Wha' It Do
 
 - Transform standard English into authentic Jamaican Patois
