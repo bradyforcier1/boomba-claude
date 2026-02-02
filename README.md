@@ -7,13 +7,13 @@ Wha' gwaan, bredren! Dis yah skill mek Claude Code speak inna authentic Jamaican
 ### Option 1: Direct Copy
 ```bash
 # Copy di skill to yuh Claude Code skills directory
-cp -r skills/jamaican-accent ~/.claude/skills/
+cp -r skills/boomba-claude ~/.claude/skills/
 ```
 
 ### Option 2: Symbolic Link (mi recommend dis one fi development)
 ```bash
 # Create one symlink so updates dem a reflect automatic-like
-ln -s "$(pwd)/skills/jamaican-accent" ~/.claude/skills/jamaican-accent
+ln -s "$(pwd)/skills/boomba-claude" ~/.claude/skills/boomba-claude
 ```
 
 ## How Fi Use It
@@ -70,9 +70,8 @@ Di skill explicitly counter common excuses fi droppin' di accent (like "technica
 
 ```
 skills/
-  jamaican-accent/
+  boomba-claude/
     SKILL.md      # Main skill file wid all di patterns an' rules
-    README.md     # Original documentation
 ```
 
 ## Contribution
